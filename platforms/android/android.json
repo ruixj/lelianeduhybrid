@@ -1,0 +1,484 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"ExtraInfo\"><param name=\"android-package\" value=\"cn.net.xiongjian.cordova.ExtraInfo\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Wechat\"><param name=\"android-package\" value=\"xu.li.cordova.wechat.Wechat\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"WECHATAPPID\" value=\"wx09d718a0cbaae41b\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 3
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_CONTACTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:exported=\"true\" android:label=\"@string/launcher_name\" android:name=\".wxapi.WXEntryActivity\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><data android:scheme=\"wx09d718a0cbaae41b\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:exported=\"true\" android:label=\"@string/launcher_name\" android:launchMode=\"singleTop\" android:name=\".wxapi.WXPayEntryActivity\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><data android:scheme=\"wx09d718a0cbaae41b\" /></intent-filter></activity>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cn.net.xiongjian.cordova": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.contacts": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        },
+        "cordova-plugin-wechat": {
+            "WECHATAPPID": "wx09d718a0cbaae41b",
+            "PACKAGE_NAME": "com.xrui.webviewincordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cn.net.xiongjian.cordova/www/ExtraInfo.js",
+            "id": "cn.net.xiongjian.cordova.ExtraInfo",
+            "clobbers": [
+                "ExtraInfo"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.camera/www/CameraConstants.js",
+            "id": "org.apache.cordova.camera.Camera",
+            "clobbers": [
+                "Camera"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js",
+            "id": "org.apache.cordova.camera.CameraPopoverOptions",
+            "clobbers": [
+                "CameraPopoverOptions"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.camera/www/Camera.js",
+            "id": "org.apache.cordova.camera.camera",
+            "clobbers": [
+                "navigator.camera"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js",
+            "id": "org.apache.cordova.camera.CameraPopoverHandle",
+            "clobbers": [
+                "CameraPopoverHandle"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/contacts.js",
+            "id": "org.apache.cordova.contacts.contacts",
+            "clobbers": [
+                "navigator.contacts"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/Contact.js",
+            "id": "org.apache.cordova.contacts.Contact",
+            "clobbers": [
+                "Contact"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/ContactAddress.js",
+            "id": "org.apache.cordova.contacts.ContactAddress",
+            "clobbers": [
+                "ContactAddress"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/ContactError.js",
+            "id": "org.apache.cordova.contacts.ContactError",
+            "clobbers": [
+                "ContactError"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/ContactField.js",
+            "id": "org.apache.cordova.contacts.ContactField",
+            "clobbers": [
+                "ContactField"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/ContactFindOptions.js",
+            "id": "org.apache.cordova.contacts.ContactFindOptions",
+            "clobbers": [
+                "ContactFindOptions"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/ContactName.js",
+            "id": "org.apache.cordova.contacts.ContactName",
+            "clobbers": [
+                "ContactName"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/ContactOrganization.js",
+            "id": "org.apache.cordova.contacts.ContactOrganization",
+            "clobbers": [
+                "ContactOrganization"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.contacts/www/ContactFieldType.js",
+            "id": "org.apache.cordova.contacts.ContactFieldType",
+            "merges": [
+                ""
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.device/www/device.js",
+            "id": "org.apache.cordova.device.device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
+            "id": "org.apache.cordova.dialogs.notification",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.dialogs/www/android/notification.js",
+            "id": "org.apache.cordova.dialogs.notification_android",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
+            "id": "org.apache.cordova.file.DirectoryEntry",
+            "clobbers": [
+                "window.DirectoryEntry"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/DirectoryReader.js",
+            "id": "org.apache.cordova.file.DirectoryReader",
+            "clobbers": [
+                "window.DirectoryReader"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/Entry.js",
+            "id": "org.apache.cordova.file.Entry",
+            "clobbers": [
+                "window.Entry"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/File.js",
+            "id": "org.apache.cordova.file.File",
+            "clobbers": [
+                "window.File"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileEntry.js",
+            "id": "org.apache.cordova.file.FileEntry",
+            "clobbers": [
+                "window.FileEntry"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileError.js",
+            "id": "org.apache.cordova.file.FileError",
+            "clobbers": [
+                "window.FileError"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileReader.js",
+            "id": "org.apache.cordova.file.FileReader",
+            "clobbers": [
+                "window.FileReader"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileSystem.js",
+            "id": "org.apache.cordova.file.FileSystem",
+            "clobbers": [
+                "window.FileSystem"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileUploadOptions.js",
+            "id": "org.apache.cordova.file.FileUploadOptions",
+            "clobbers": [
+                "window.FileUploadOptions"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileUploadResult.js",
+            "id": "org.apache.cordova.file.FileUploadResult",
+            "clobbers": [
+                "window.FileUploadResult"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileWriter.js",
+            "id": "org.apache.cordova.file.FileWriter",
+            "clobbers": [
+                "window.FileWriter"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/Flags.js",
+            "id": "org.apache.cordova.file.Flags",
+            "clobbers": [
+                "window.Flags"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/LocalFileSystem.js",
+            "id": "org.apache.cordova.file.LocalFileSystem",
+            "clobbers": [
+                "window.LocalFileSystem"
+            ],
+            "merges": [
+                "window"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/Metadata.js",
+            "id": "org.apache.cordova.file.Metadata",
+            "clobbers": [
+                "window.Metadata"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/ProgressEvent.js",
+            "id": "org.apache.cordova.file.ProgressEvent",
+            "clobbers": [
+                "window.ProgressEvent"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/fileSystems.js",
+            "id": "org.apache.cordova.file.fileSystems"
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/requestFileSystem.js",
+            "id": "org.apache.cordova.file.requestFileSystem",
+            "clobbers": [
+                "window.requestFileSystem"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js",
+            "id": "org.apache.cordova.file.resolveLocalFileSystemURI",
+            "merges": [
+                "window"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/android/FileSystem.js",
+            "id": "org.apache.cordova.file.androidFileSystem",
+            "merges": [
+                "FileSystem"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/fileSystems-roots.js",
+            "id": "org.apache.cordova.file.fileSystems-roots",
+            "runs": true
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/fileSystemPaths.js",
+            "id": "org.apache.cordova.file.fileSystemPaths",
+            "merges": [
+                "cordova"
+            ],
+            "runs": true
+        },
+        {
+            "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
+            "id": "org.apache.cordova.inappbrowser.inappbrowser",
+            "clobbers": [
+                "window.open"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.network-information/www/network.js",
+            "id": "org.apache.cordova.network-information.network",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.network-information/www/Connection.js",
+            "id": "org.apache.cordova.network-information.Connection",
+            "clobbers": [
+                "Connection"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.vibration/www/vibration.js",
+            "id": "org.apache.cordova.vibration.notification",
+            "merges": [
+                "navigator.notification",
+                "navigator"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-wechat/www/wechat.js",
+            "id": "cordova-plugin-wechat.Wechat",
+            "clobbers": [
+                "Wechat"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cn.net.xiongjian.cordova": "0.0.1",
+        "org.apache.cordova.camera": "0.3.6",
+        "org.apache.cordova.contacts": "0.2.16",
+        "org.apache.cordova.device": "0.3.0",
+        "org.apache.cordova.dialogs": "0.3.0",
+        "org.apache.cordova.file": "1.3.3",
+        "org.apache.cordova.geolocation": "0.3.12",
+        "org.apache.cordova.inappbrowser": "0.6.0",
+        "org.apache.cordova.network-information": "0.2.15",
+        "org.apache.cordova.vibration": "0.3.13",
+        "cordova-plugin-whitelist": "1.2.2",
+        "cordova-plugin-wechat": "1.4.0"
+    }
+}

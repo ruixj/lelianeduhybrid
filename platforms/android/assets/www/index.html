@@ -15,10 +15,12 @@
   <!-- Main -->
   <div data-role="page" id="main">
     <div data-role="header">
-      <h1>Cordova Sample</h1> 
+      <h1>Cordova Plugin Usage Demo</h1> 
     </div>
     <div data-role="content">
       <ul data-role="listview">
+        <li><a href="#myplugin" data-transition="slide">Myplugin</a></li>
+        <li><a href="#weixinplugin" data-transition="slide">微信认证</a></li>      
         <li><a href="#accelerometer" data-transition="slide">Accelerometer</a></li>
         <li><a href="#camera" data-transition="slide">Camera</a></li>
         <li><a href="#compass" data-transition="slide">Compass</a></li>
@@ -31,7 +33,7 @@
         <li><a href="#inAppBrowser" data-transition="slide">InAppBrowser</a></li>
         <li><a href="#storage" data-transition="slide">Storage</a></li>
         <li><a href="#database" data-transition="slide">Database</a></li>
-        <li><a href="#myplugin" data-transition="slide">Myplugin</a></li>
+
       </ul>
     </div>
   </div>
@@ -81,6 +83,40 @@
  
     </script>
   </div>
+  
+  <div data-role="page" id="weixinplugin">
+    <div data-role="header">
+      <a data-role="button" data-rel="back" data-direction="reverse" data-icon="arrow-l">Back</a>
+      <h1>微信认证 </h1> 
+    </div>
+    <div data-role="content">
+        <a href="#" data-role="button" id="weixinauth">微信认证</a><br>
+         
+        <div id="accvals1">认证中</div>
+        <br><br>
+ 
+    </div>
+    <script type="text/javascript">
+      document.addEventListener('deviceready', onDeviceReady, false);
+      function onDeviceReady() {
+        $("#weixinauth").on("click", weixinauth);
+ 
+      }
+
+      function weixinauth() {
+         var scope = "snsapi_userinfo",
+             state = "_" + (+new Date());
+         Wechat.auth(scope, state, function (response) {
+             // you may use response.code to get the access token.
+             alert(JSON.stringify(response));
+         }, function (reason) {
+             alert("Failed: " + reason);
+         });
+      }
+
+ 
+    </script>
+  </div>  
   <!-- Accelerometer 
         $ cordova plugin add org.apache.cordova.device-motion
   -->
